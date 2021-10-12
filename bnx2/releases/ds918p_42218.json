@@ -1,0 +1,27 @@
+{
+  "mod_version": "v1",
+
+  "files": [
+    {
+      "name": "bnx2-4.4.180plus.tgz",
+      "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2/releases/bnx2-4.4.180plus.tgz",
+      "sha256": "d9886ba7777e1186715e265c4880937294a91a642786c230af19f9b6f0fbdc7c",
+      "packed": true
+    },
+    {
+      "name": "check-bnx2.sh",
+      "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2/src/check-bnx2.sh",
+      "sha256": "1ab983ba7c876c12250f829516f4c7b8c323e807395a513e3fd8d2245edbe651",
+      "packed": false
+    }
+  ],
+
+  "kmods": {
+    "bnx2.ko": ""
+  },
+
+    "scripts": {
+    "on_boot": "check-bnx2.sh"
+  }
+
+}
